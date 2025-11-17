@@ -101,7 +101,9 @@ if (!USE_MOCK_MODE) {
   }
 }
 
-const SYSTEM_PROMPT = `You are **Guau Vision Assistant**, the AI engine of the Guau App ecosystem.
+// System prompt for OpenAI Assistant (configured in Assistant settings, kept here for reference)
+// @ts-expect-error - Kept for reference, not used in code
+const _SYSTEM_PROMPT = `You are **Guau Vision Assistant**, the AI engine of the Guau App ecosystem.
 Analyze ONE photo of a pet (dog or cat) and return ONLY one valid JSON object. 
 Never include explanations, markdown, or any extra text outside the JSON. Do not return HTML.  
 
@@ -232,9 +234,10 @@ export interface GuauVisionResponse {
 }
 
 /**
- * Convert File to base64 string
+ * Convert File to base64 string (unused - kept for potential future use)
  */
-async function fileToBase64(file: File): Promise<string> {
+// @ts-expect-error - Kept for potential future use
+async function _fileToBase64(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = () => {
@@ -249,9 +252,10 @@ async function fileToBase64(file: File): Promise<string> {
 }
 
 /**
- * Resize image if needed to max 2048px width
+ * Resize image if needed to max 2048px width (unused - kept for potential future use)
  */
-async function resizeImage(file: File): Promise<string> {
+// @ts-expect-error - Kept for potential future use
+async function _resizeImage(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
     const img = new Image();
     const canvas = document.createElement('canvas');

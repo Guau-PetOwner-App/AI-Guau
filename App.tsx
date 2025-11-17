@@ -46,7 +46,7 @@ type AuthAction = 'save' | 'share' | 'download' | null;
 export default function App() {
   const { t, i18n } = useTranslation();
   const [currentScreen, setCurrentScreen] = useState<Screen>('hero');
-  const [uploadedImage, setUploadedImage] = useState<string | null>(null);
+  const [_uploadedImage, setUploadedImage] = useState<string | null>(null);
   const [uploadedFile, setUploadedFile] = useState<File | null>(null);
   const [analysis, setAnalysis] = useState<PetAnalysis | null>(null);
   const [showShareModal, setShowShareModal] = useState(false);

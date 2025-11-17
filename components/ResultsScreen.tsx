@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Share2, Download, Save, Heart, Sparkles, CheckCircle2, Calendar, Cat, Footprints, Brain, Home, Coffee, Gamepad2, Activity, Lightbulb, type LucideIcon } from 'lucide-react';
+import { Share2, Download, Save, Heart, Sparkles, CheckCircle2, Calendar, Cat, Footprints, Brain, Home, Coffee, Gamepad2, Activity, type LucideIcon } from 'lucide-react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Card } from './ui/card';

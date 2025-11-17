@@ -1,5 +1,5 @@
 import { supabase, getCurrentUser, type PetAnalysis } from '../lib/supabase';
-import type { PetAnalysisResult } from './petAnalysisMapper';
+import type { PetAnalysis as PetAnalysisResult } from '../App';
 
 const STORAGE_BUCKET = 'pet-photos';
 
@@ -14,7 +14,7 @@ export async function uploadPetPhoto(file: File, analysisId: string): Promise<st
 
     console.log('Uploading photo to storage:', filePath);
 
-    const { data, error } = await supabase.storage
+    const { error } = await supabase.storage
       .from(STORAGE_BUCKET)
       .upload(filePath, file, {
         cacheControl: '3600',

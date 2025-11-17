@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { Camera, Upload, Sparkles, Zap, Brain, Heart } from 'lucide-react';
+import { Camera, Sparkles, Zap, Brain, Heart } from 'lucide-react';
 import { Button } from './ui/button';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';

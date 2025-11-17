@@ -1,8 +1,9 @@
 import { GuauVisionResponse } from './openai';
 import { PetAnalysis } from '../App';
 
-// Map energy level to icon name
-const getEnergyIconName = (energyLevel: string): string => {
+// Map energy level to icon name (unused but kept for potential future use)
+// @ts-expect-error - Kept for potential future use
+const _getEnergyIconName = (energyLevel: string): string => {
   const level = energyLevel.toLowerCase();
   if (level.includes('high') || level.includes('alta')) return 'activity';
   if (level.includes('medium') || level.includes('media')) return 'footprints';

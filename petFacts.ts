@@ -39,7 +39,9 @@ function getPetFacts(): PetFact[] {
 export const petFacts: PetFact[] = getPetFacts();
 
 // Legacy array kept for backward compatibility (will be replaced by getPetFacts)
-const legacyPetFacts: PetFact[] = [
+// Note: This is kept for reference but not used - getPetFacts() is used instead
+// @ts-expect-error - Legacy code kept for reference
+const _legacyPetFacts: PetFact[] = [
   // 🐶 PERROS - Facts Divertidos
   {
     text: "Los perros pueden distinguir hasta 340 razas diferentes y cada una tiene necesidades únicas de ejercicio.",
