@@ -1,0 +1,33 @@
+════════════════════════════════════════════════════════════════
+  CONFIGURAR GUAU APP - COMANDO AUTOMÁTICO
+════════════════════════════════════════════════════════════════
+
+COPIA Y PEGA ESTE COMANDO EN TU TERMINAL:
+
+chmod +x editar-env.sh && ./editar-env.sh
+
+
+Esto abrirá un asistente que te pedirá tu API key y la guardará
+automáticamente.
+
+────────────────────────────────────────────────────────────────
+
+ALTERNATIVA - COMANDO DIRECTO:
+
+1. Obtén tu API key en: https://platform.openai.com/api-keys
+
+2. Reemplaza YOUR_API_KEY en este comando con tu key real:
+
+cat > .env << 'EOF'
+VITE_OPENAI_API_KEY=YOUR_API_KEY
+VITE_OPENAI_ASSISTANT_ID=asst_7bJDB6UcFWaQkvWSjPixb7NB
+VITE_SUPABASE_URL=https://oqoaxusesfcrmejftwmt.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9xb2F4dXNlc2Zjcm1lamZ0d210Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU2MDI2NjcsImV4cCI6MjA1MTE3ODY2N30.rABbqPrvusFPJCDHPdIjMmYZSXlxp8V6pLz0wQYVzCY
+VITE_GUAU_APP_URL=https://get.guau.app
+EOF
+
+3. Ejecuta el comando modificado
+
+4. Reinicia: npm run dev
+
+════════════════════════════════════════════════════════════════
